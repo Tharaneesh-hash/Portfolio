@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THARANEESH K | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">THARANEESH.</div>
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <button class="resume" onclick="downloadResume()">Resume</button>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+</header>
+<section id="home" class="hero">
+    <div class="connect-box">
+        <p class="number">01 · CONNECT</p>
+        <h1>
+            Let's <span>connect.</span>
+        </h1>
+        <p>
+            I'm always open to learning opportunities, meaningful projects,
+            and collaborations.<br>
+            Let's build something impactful together.
+        </p>
+        <div class="buttons">
+
+            <a href="mailto:tharaneesh@gmail.com"
+               class="btn primary">
+                Send me an email →
+            </a>
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               class="btn secondary">
+                LinkedIn ↗
+            </a>
+        </div>
+    </div>
+</section>
+<section class="section introduction">
+    <div class="intro-text">
+        <p class="number">01 · INTRODUCTION</p>
+        <h2>
+            THARANEESH <span>K</span>
+        </h2>
+        <h3>
+            IT Student | Aspiring Full Stack Developer
+        </h3>
+        <p>
+            I'm an enthusiastic technology student passionate about building
+            impactful web and software solutions. I enjoy learning new
+            technologies, solving problems, and creating user-friendly
+            applications.
+        </p>
+        <div class="buttons left">
+            <a href="#projects" class="btn primary">
+                Explore My Work →
+            </a>
+            <a href="#contact" class="btn secondary">
+                Let's Connect
+            </a>
+        </div>
+    </div>
+    <div class="code-card">
+
+        <div class="code-header">
+            <span>&lt;/&gt;</span>
+            <span>▣</span>
+        </div>
+<pre>
+const developer = {
+    name: "THARANEESH K",
+    role: "IT Student",
+    skills: ["Java","HTML","CSS","JS"],
+    goal: "Build impactful solutions"
+};
+console.log("Let's Connect!");
+</pre>
+        <div class="building">
+            🚀
+            <b>Always<br>Building</b>
+        </div>
+    </div>
+</section>
+<section id="about" class="section">
+    <p class="number">02 · ABOUT</p>
+    <h2>A little about me.</h2>
+    <div class="about-container">
+        <div class="profile">
+            <!-- Replace this with your photo -->
+            <img src="profile.jpg" alt="THARANEESH K">
+        </div>
+        <div class="about-content">
+            <h3>
+                Building my foundation in
+                <span>technology.</span>
+            </h3>
+            <p>
+                I'm currently pursuing my Information Technology degree and
+                have a strong interest in web development, data structures,
+                and building real-world applications. I enjoy learning new
+                technologies, working on projects, and solving problems.
+            </p>
+            <div class="info-grid">
+                <div class="info">
+                    <b>🎓 B.Tech (IT)</b>
+                    <small>Degree</small>
+                </div>
+                <div class="info">
+                    <b>🏫 Vel Tech / College Name</b>
+                    <small>College</small>
+                </div>
+                <div class="info">
+                    <b>📍 Tamil Nadu, India</b>
+                    <small>Location</small>
+                </div>
+                <div class="info">
+                    <b>💻 Software Development</b>
+                    <small>Area of Interest</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="skills" class="section">
+    <p class="number">03 · SKILLS</p>
+    <div class="heading-row">
+        <h2>What I'm working with.</h2>
+        <p>
+            A growing technical foundation built through coursework,
+            practice, and real projects.
+        </p>
+    </div>
+    <div class="skills-container">
+        <div>
+            <div class="skill-box">
+                <h3>Frontend Development</h3>
+                <div class="skill-icons">
+                    <div>
+                        <strong class="html">5</strong>
+                        <span>HTML</span>
+                    </div>
+                    <div>
+                        <strong class="css">3</strong>
+                        <span>CSS</span>
+                    </div>
+                    <div>
+                        <strong class="javascript">JS</strong>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <h3>Areas of Interest</h3>
+                <div class="interest">
+                    <span>▣ Web Development</span>
+                    <span>◆ Problem Solving</span>
+                    <span>✦ Machine Learning</span>
+                    <span>▦ Backend Development</span>
+                </div>
+            </div>
+        </div>
+        <div class="skill-box progress-box">
+            <h3>
+                Expanding my <span>full stack</span> skills.
+            </h3>
+            <p>
+                I'm continuously learning new tools and technologies to
+                build better, scalable, and efficient solutions.
+            </p>
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+            <p class="percentage">80%</p>
+        </div>
+    </div>
+</section>
+<section id="projects" class="section">
+    <p class="number">04 · PROJECTS</p>
+    <div class="heading-row">
+        <h2>Things I've worked on.</h2>
+        <p>
+            Practical projects that reflect my interest in web development
+            and problem solving.
+        </p>
+    </div>
+    <div class="project">
+        <div class="project-icon">◉</div>
+        <div>
+            <h3>RescueCode</h3>
+            <p>
+                An AI-powered system that connects people in crisis with
+                nearby shelters, healthcare, and safety services.
+            </p>
+            <div class="tags">
+                <span>Web App</span>
+                <span>AI/ML</span>
+                <span>React</span>
+                <span>Social Impact</span>
+            </div>
+        </div>
+        <button onclick="projectMessage()">
+            →
+        </button>
+    </div>
+    <div class="project">
+        <div class="project-icon">▣</div>
+        <div>
+            <h3>Student Schedora AI</h3>
+            <p>
+                An AI-powered academic assistant for IT students to
+                organize timetable, assignments, and deadlines.
+            </p>
+            <div class="tags">
+                <span>Web App</span>
+                <span>AI Assistant</span>
+                <span>Productivity</span>
+                <span>Education</span>
+            </div>
+        </div>
+        <button onclick="projectMessage()">
+            →
+        </button>
+    </div>
+</section>
+<section id="research" class="section">
+    <p class="number">05 · RESEARCH</p>
+    <h2>Research & academic work.</h2>
+    <div class="research">
+        <div>
+            <span class="research-tag">
+                Research
+            </span>
+            <small>
+                Undergraduate Academic Work
+            </small>
+            <h3>
+                Cryptocurrency Crime Risk
+                Management using Machine Learning
+            </h3>
+            <p>
+                A cybercrime study focused on machine learning approaches
+                for cryptocurrency crime risk detection and analysis.
+            </p>
+            <div class="tags">
+                <span>Machine Learning</span>
+                <span>Data Analysis</span>
+                <span>Cybersecurity</span>
+                <span>Research</span>
+            </div>
+        </div>
+        <div class="brain">
+            🧠
+        </div>
+    </div>
+</section>
+<section id="education" class="section">
+    <p class="number">06 · EDUCATION</p>
+    <h2>My academic journey.</h2>
+    <div class="education">
+        <div class="timeline"></div>
+        <div class="year">
+            2022 – 2026
+        </div>
+        <div>
+            <small>BACHELOR OF TECHNOLOGY</small>
+            <h3>
+                Information Technology
+            </h3>
+            <p>
+                Vel Tech / College Name
+            </p>
+        </div>
+        <div class="graduation">
+        </div>
+    </div>
+</section>
+<section class="section">
+    <p class="number">07 · LEARNING</p>
+    <div class="heading-row">
+        <h2>Learning beyond the classroom.</h2>
+        <p>
+            Continuously learning through online courses,
+            technical workshops, and self-practice.
+        </p>
+    </div>
+    <div class="learning">
+        <div class="learning-card">
+            <div class="learn-icon">✪</div>
+            <h3>NPTEL</h3>
+            <p>
+                Completed courses on core computer science subjects.
+            </p>
+            <a href="#">View Certificate →</a>
+        </div>
+        <div class="learning-card">
+            <div class="learn-icon">🐍</div>
+            <h3>Python – Spoken Tutorial</h3>
+            <p>
+                Learned and practiced Python through spoken tutorial.
+            </p>
+            <a href="#">View Certificate →</a>
+        </div>
+        <div class="learning-card">
+            <div class="learn-icon">⚙</div>
+            <h3>DevOps Workshop</h3>
+            <p>
+                Hands-on experience with modern DevOps tools and workflows.
+            </p>
+            <a href="#">View Certificate →</a>
+        </div>
+    </div>
+</section>
+<section id="contact" class="section">
+    <div class="connect-box">
+        <p class="number">08 · CONNECT</p>
+        <h1>
+            Let's <span>build</span> something.
+        </h1>
+        <p>
+            Have a project, internship, or collaboration opportunity?
+        </p>
+        <a href="mailto:tharaneesh@gmail.com"
+           class="btn primary">
+            tharaneesh@gmail.com →
+        </a>
+    </div>
+</section>
+<footer>
+    © 2026 THARANEESH K · Built with HTML, CSS & JavaScript
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

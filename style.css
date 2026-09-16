@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b1830;
+    background: white;
+}
+a {
+    text-decoration: none;
+}
+header {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.95);
+    border-bottom: 1px solid #e8edf3;
+}
+.logo {
+    font-size: 18px;
+    font-weight: 900;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    color: #58657a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 25px 0;
+}
+nav a:hover,
+nav a.active {
+    color: #0878ee;
+    border-bottom: 2px solid #0878ee;
+}
+.resume {
+    background: #0878ee;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 22px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.menu {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+.section {
+    max-width: 1120px;
+    margin: auto;
+    padding: 80px 40px;
+    scroll-margin-top: 70px;
+}
+.hero {
+    padding-top: 65px;
+}
+.connect-box {
+    text-align: center;
+    background: #f4f8ff;
+    border: 1px solid #e2ebf5;
+    border-radius: 16px;
+    padding: 70px 25px;
+}
+.number {
+    color: #0878ee;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    margin-bottom: 12px;
+}
+h1 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+h1 span,
+h2 span,
+h3 span {
+    color: #0878ee;
+}
+h2 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+h3 {
+    font-size: 19px;
+}
+p {
+    color: #6c788b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+.buttons.left {
+    justify-content: flex-start;
+}
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.primary {
+    background: #0878ee;
+    color: white;
+}
+.secondary {
+    background: white;
+    color: #23334d;
+    border: 1px solid #cfdbe9;
+}
+.introduction {
+    display: grid;
+    grid-template-columns: 1.3fr .8fr;
+    gap: 50px;
+    align-items: center;
+}
+.intro-text h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.intro-text h3 {
+    margin-bottom: 12px;
+}
+.code-card {
+    position: relative;
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 18px;
+    background: #fbfdff;
+    box-shadow: 0 8px 25px rgba(30,60,100,.07);
+}
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    color: #0878ee;
+}
+pre {
+    font: 11px/1.7 Consolas, monospace;
+    color: #385a80;
+    margin-top: 12px;
+}
+.building {
+    position: absolute;
+    right: 12px;
+    bottom: -30px;
+    background: white;
+    border: 1px solid #dce5ef;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-size: 12px;
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+.profile {
+    height: 280px;
+    border-radius: 13px;
+    background: #dceeff;
+    overflow: hidden;
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-content h3 {
+    margin-bottom: 10px;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+.info {
+    background: #f3f7fb;
+    padding: 14px;
+    border-radius: 9px;
+}
+.info b {
+    display: block;
+    font-size: 12px;
+}
+.info small {
+    color: #8490a1;
+}
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+}
+.heading-row p {
+    max-width: 320px;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: 1.5fr .75fr;
+    gap: 18px;
+    margin-top: 25px;
+}
+.skill-container > div {
+    display: grid;
+}
+.skill-box {
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.skill-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 18px;
+}
+.skill-icons div {
+    text-align: center;
+}
+.skill-icons strong {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    margin: auto auto 5px;
+    font-size: 18px;
+}
+.html {
+    background: #ffe7de;
+    color: #e44d26;
+}
+.css {
+    background: #e1efff;
+    color: #1572b6;
+}
+.javascript {
+    background: #fff2b8;
+    color: #a57b00;
+}
+.interest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 15px;
+    color: #38628f;
+    font-size: 13px;
+}
+.progress {
+    height: 12px;
+    background: #e7edf4;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+#progressBar {
+    width: 0;
+    height: 100%;
+    background: #0878ee;
+    border-radius: 20px;
+    transition: width 1.5s;
+}
+.percentage {
+    text-align: right;
+    font-size: 11px;
+}
+.project {
+    display: grid;
+    grid-template-columns: 60px 1fr 40px;
+    gap: 16px;
+    align-items: center;
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.project-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: #eaf4ff;
+    color: #0878ee;
+    font-size: 25px;
+}
+.project button {
+    background: none;
+    border: none;
+    color: #0878ee;
+    font-size: 25px;
+    cursor: pointer;
+}
+.tags {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.tags span,
+.research-tag {
+    background: #eaf5ff;
+    color: #1676dc;
+    border-radius: 20px;
+    padding: 4px 9px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.research {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 30px;
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 25px;
+    background: #fbfdff;
+}
+.research small {
+    color: #78869a;
+}
+.research h3 {
+    font-size: 23px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+.research-tag {
+    display: inline-block;
+}
+.brain {
+    font-size: 100px;
+    display: grid;
+    place-items: center;
+}
+.education {
+    position: relative;
+    display: grid;
+    grid-template-columns: 130px 1fr 140px;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 30px;
+}
+.timeline {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #0878ee;
+    border-radius: 50%;
+}
+.year {
+    font-weight: bold;
+}
+.education small {
+    font-size: 10px;
+    font-weight: bold;
+    color: #68768b;
+}
+.graduation {
+    text-align: center;
+    font-size: 65px;
+}
+.learning {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+}
+.learning-card {
+    border: 1px solid #dce5ef;
+    border-radius: 13px;
+    padding: 20px;
+    min-height: 190px;
+}
+.learn-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.learning-card p {
+    margin: 8px 0 12px;
+}
+.learning-card a {
+    color: #0878ee;
+    font-size: 11px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #e7edf4;
+    color: #8290a2;
+    font-size: 11px;
+}
+@media(max-width:800px) {
+    header {
+        padding: 0 20px;
+    }
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 25px;
+        background: white;
+        border-bottom: 1px solid #dce5ef;
+    }
+    nav.open {
+        display: flex;
+    }
+    nav a {
+        padding: 12px 0;
+    }
+    .resume {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .section {
+        padding: 60px 22px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .introduction,
+    .about-container,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    .heading-row {
+        display: block;
+    }
+    .heading-row p {
+        margin-bottom: 20px;
+    }
+    .learning {
+        grid-template-columns: 1fr;
+    }
+    .education {
+        grid-template-columns: 1fr;
+    }
+    .graduation {
+        display: none;
+    }
+    .research {
+        grid-template-columns: 1fr;
+    }
+    .brain {
+        display: none;
+    }
+    .project {
+           grid-template-columns: 55px 1fr;
+    }
+    .project button {
+        display: none;
+    }
+}
