@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THARANEESH K - MiniBlog</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="logo">T</div>
+        <nav>
+            <button class="nav-item active" data-page="home">
+                <span>⌂</span> Home
+            </button>
+            <button class="nav-item" data-page="explore">
+                <span>⌕</span> Explore
+            </button>
+            <button class="nav-item" data-page="notifications">
+                <span>🔔</span> Notifications
+            </button>
+            <button class="nav-item" data-page="messages">
+                <span>✉</span> Messages
+            </button>
+            <button class="nav-item" data-page="bookmarks">
+                <span>🔖</span> Bookmarks
+            </button>
+            <button class="nav-item" data-page="profile">
+                <span>♟</span> Profile
+            </button>
+            <button class="nav-item" data-page="following">
+                <span>👥</span> Following
+            </button>
+            <button class="nav-item" data-page="settings">
+                <span>⚙</span> Settings
+            </button>
+        </nav>
+        <button class="post-button" id="createPost">
+            ✎ &nbsp; Post
+        </button>
+    </aside>
+    <main class="main-content">
+        <div id="pageContent"></div>
+    </main>
+    <aside class="right-sidebar">
+        <div class="search-box">
+            🔍
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search MiniBlog..."
+            >
+        </div>
+        <div class="side-card">
+            <h2>What's happening</h2>
+            <p>🔥 &nbsp; #Technology</p>
+            <p>💻 &nbsp; #Programming</p>
+            <p>🚀 &nbsp; #StudentLife</p>
+            <p>📚 &nbsp; #CollegeLife</p>
+            <p>☀️ &nbsp; #MiniBlog</p>
+        </div>
+        <div class="side-card">
+            <h2>Who to follow</h2>
+            <div class="follow-user">
+                <div class="small-avatar">MA</div>
+                <span>Maha</span>
+                <button class="follow-btn following">
+                    Following
+                </button>
+            </div>
+            <div class="follow-user">
+                <div class="small-avatar sofia">SO</div>
+                <span>Sofi</span>
+                <button class="follow-btn following">
+                    Following
+                </button>
+            </div>
+            <div class="follow-user">
+                <div class="small-avatar anu">AN</div>
+                <span>Anu</span>
+                <button class="follow-btn">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </aside>
+</div>
+<div class="modal" id="postModal">
+    <div class="modal-content">
+        <button class="close" id="closeModal">
+            ×
+        </button>
+        <h2>Create Post</h2>
+        <textarea
+            id="postText"
+            placeholder="What's happening?"
+        ></textarea>
+        <button class="post-button" id="publishPost">
+            Post
+        </button>
+    </div>
+</div>
+<script src="script1.js"></script>
+</body>
+</html>
